@@ -1,0 +1,10 @@
+@media (min-width: 500px) {
+    header {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

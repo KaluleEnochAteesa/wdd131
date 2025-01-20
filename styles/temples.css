@@ -1,6 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f0f8ff;
@@ -17,13 +14,34 @@ header, main, footer {
     background-color: #e0f7fa;
 }
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-section {
+figure {
     padding: 1rem;
     background-color: #ffffff;
+    border: 1px solid #ccc;
 }

@@ -11,3 +11,4 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('nav ul').classList.toggle('visible');
     });
 });
+

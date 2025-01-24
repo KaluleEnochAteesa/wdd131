@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Roboto, helvetica, sans-serif;
+}
+header, main, footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+.banner {
+    padding: 1rem;
+    background-color: #eee;
+}
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h2 {
+    color: navy;
+    text-align: left; /* Changed to left-aligned */
+    grid-column: span 2; /* Span two columns */
+}
+article p {
+    text-align: justify;
+}
+.callout {
+    color: #fff; /* Changed to white for better contrast */
+    background-color: #702963;
+    padding: 1rem; /* Added padding */
+}
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+    text-align: left; /* Moved to the left */
+}

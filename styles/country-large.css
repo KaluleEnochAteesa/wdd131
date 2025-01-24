@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Ubuntu:ital,wght@0,500;1,400;1,700&display=swap');
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #image {
+        position: relative;
+        width: 100%;
+    }
+
+    #data, #weather {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1em;
+        border-radius: 8px;
+    }
+
+    #data {
+        top: 10px;
+        left: 10px;
+    }
+
+    #weather {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .weather-icon {
+        display: inline-block;
+    }
+
+    .weather-image {
+        display: none;
+    }
+
+    #weather::after {
+        content: "⛅";
+        font-size: 2em;
+        display: block;
+        text-align: center;
+    }
+}
+

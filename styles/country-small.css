@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Ubuntu:ital,wght@0,500;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Comfortaa', 'Ubuntu', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #0077BE;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+#image {
+    text-align: center;
+}
+
+#image img {
+    width: 100%;
+    height: auto;
+}
+
+#data, #weather {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.weather-icon {
+    display: none;
+}
+
+.weather-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #0077BE;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}

@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Ubuntu:ital,wght@0,500;1,400;1,700&display=swap');
 
+:root {
+    --primary-color: #0077BE;
+    --secondary-color: #f0f0f0;
+    --width: 100%;
+}
+
+
+
 body {
     font-family: 'Comfortaa', 'Ubuntu', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: var(--secondary-color);
 }
 
 header {
-    background-color: #0077BE;
-    color: white;
+    font-family: 'Ubuntu','Comfortaa',  Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 1em 0;
 }
@@ -27,7 +36,7 @@ section {
 }
 
 #image img {
-    width: 100%;
+    width: var(--width);
     height: auto;
 }
 
@@ -43,13 +52,13 @@ section {
 
 .weather-image {
     display: block;
-    width: 100%;
+    width: var(--width);
     height: auto;
 }
 
 footer {
-    background-color: #0077BE;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 1em 0;
 }

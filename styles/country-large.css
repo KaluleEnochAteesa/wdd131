@@ -42,7 +42,7 @@
         display: none;
     }
 
-    #weather::after {
+    #weather .weather-icon::after {
         content: "⛅";
         font-size: 2em;
         display: block;

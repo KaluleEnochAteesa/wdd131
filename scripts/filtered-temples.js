@@ -68,6 +68,20 @@ document.addEventListener('DOMContentLoaded', () => {
             dedicated: "1989, December, 18",
             area: 80350,
             imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/las-vegas-nevada-temple/las-vegas-nevada-temple-35604-main.jpg"
+        },
+        {
+            templeName: "Manhattan New York",
+            location: "New York, New York ,United States",
+            dedicated: "2004, June ,13 ",
+            area: 20630,
+            imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/manhattan-new-york-temple/manhattan-new-york-temple-40080-main.jpg"
+        },
+        {
+            templeName: "Moses Lake Washington",
+            location: "Moses Lake, Washington  ,United States",
+            dedicated: "2023, September, 17 ",
+            area: 28933,
+            imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/moses-lake-washington-temple/moses-lake-washington-temple-39148-main.jpg"
         }
     ];
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="/styles/form.css">
+    <script src="/scripts/form.js" defer></script>
+</head>
+<body>
+    <form method="get" action="review.html">
+        <fieldset>
+            <legend>Product Review</legend>
+            
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            
+            <label>Overall Rating</label>
+            <div class="radio-group">
+                <input type="radio" id="rating1" name="rating" value="1" required>
+                <label for="rating1">☆</label>
+                <input type="radio" id="rating2" name="rating" value="2">
+                <label for="rating2">☆☆</label>
+                <input type="radio" id="rating3" name="rating" value="3">
+                <label for="rating3">☆☆☆</label>
+                <input type="radio" id="rating4" name="rating" value="4">
+                <label for="rating4">☆☆☆☆</label>
+                <input type="radio" id="rating5" name="rating" value="5">
+                <label for="rating5">☆☆☆☆☆</label>
+            </div>
+            
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+            
+            <label>Which features did you find useful in the product? (Check all that apply)</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="durability" name="features" value="Durability">
+                <label for="durability">Durability</label>
+                <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use">
+                <label for="easeOfUse">Ease of Use</label>
+                <input type="checkbox" id="performance" name="features" value="Performance">
+                <label for="performance">Performance</label>
+                <input type="checkbox" id="design" name="features" value="Design">
+                <label for="design">Design</label>
+            </div>
+            
+            <label for="writtenReview">Written Review (Optional)</label>
+            <textarea id="writtenReview" name="writtenReview"></textarea>
+            
+            <label for="userName">Your Name (Optional)</label>
+            <input type="text" id="userName" name="userName">
+            
+            <input type="submit" value="Post Review">
+        </fieldset>
+    </form>
+    
+    <footer>
+        <p>©2025 KALULE ENOCH ATEESA. All rights reserved.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('lastModified').innerText = document.lastModified;
+    </script>
+</body>
+</html>

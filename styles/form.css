@@ -70,7 +70,7 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-footer {
+footer,h1 {
     text-align: center;
     margin-top: 20px;
     padding: 10px;

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+
+    <meta name="author" content="KALULE ENOCH ATEESA">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - KALULE ENOCH ATEESA. My personally designed dynamic web form review page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <h1>Review Submitted</h1>
+    <p>Thank you for submitting your review!</p>
+    <p>You have submitted <span id="reviewCount"></span> reviews.</p>
+    <footer>
+        <p>©2025 KALULE ENOCH ATEESA. All rights reserved.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // Display the current review count from local storage
+        document.getElementById('reviewCount').innerText = localStorage.getItem('reviewCount');
+        
+        // Display the last modified date
+        document.getElementById('lastModified').innerText = document.lastModified;
+    </script>
+</body>
+</html>

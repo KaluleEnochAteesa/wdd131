@@ -15,14 +15,27 @@ window.onload = function() {
         option.textContent = product.name;
         productNameSelect.appendChild(option);
     });
+
+    // Display initial review count
+    console.log('Initial Review Count:', localStorage.getItem('reviewCount'));
 };
 
-// Counter for the number of reviews completed by the user
+// Initialize review count in local storage if not present
 if (localStorage.getItem('reviewCount') === null) {
     localStorage.setItem('reviewCount', 0);
 }
 
-document.querySelector('form').addEventListener('submit', function() {
-    let reviewCount = parseInt(localStorage.getItem('reviewCount'));
+// Increment review count on form submission
+document.querySelector('form').addEventListener('submit', function(event) {
+    // Prevent form submission for demonstration purposes
+    //event.preventDefault();
+
+    let reviewCount = parseInt(localStorage.getItem('reviewCount'), 10);
     localStorage.setItem('reviewCount', reviewCount + 1);
+
+    // Display updated review count
+    console.log('Updated Review Count:', localStorage.getItem('reviewCount'));
+
+    // Allow form submission to proceed (remove this line if preventing submission)
+    // event.target.submit();
 });

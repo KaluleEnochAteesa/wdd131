@@ -1,9 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    margin: 0;
-    padding: 0;
+    margin: 1rem;
 }
 
 form {
@@ -26,6 +25,7 @@ legend {
 
 label {
     display: block;
+    font-weight: 700;
     margin-top: 10px;
 }
 
@@ -43,26 +43,27 @@ select {
 .radio-group,
 .checkbox-group {
     display: flex;
-    align-items: center;
-    gap: 5px; /* Space between elements */
+    flex-direction: column;
     margin-bottom: 10px; /* Ensure space after each group */
 }
 
-.radio-group label,
 .checkbox-group label {
-    margin-right: 10px;
+    display: block;
+    margin-bottom: 5px; /* Space between checkboxes */
 }
 
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
     margin-top: 20px; /* Add space on top of the button */
     display: block;
+    width: 100%; /* Same width as the text input buttons */
+    text-align: center; /* Center the text */
 }
 
 input[type="submit"]:hover {
@@ -76,4 +77,45 @@ footer {
     background-color: #333;
     color: white;
     font-size: 0.8em;
+    width: 300px; /* Same width as the form */
+    margin: 20px auto; /* Center the footer */
+}
+
+#lastModified {
+    font-weight: bold;
+}
+
+/* Stars Rating Style */
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input[type="radio"]:checked ~ label {
+    color: #000;
+}
+
+.stars label::before {
+    content: "☆";
+}
+
+.stars input[type="radio"]:checked ~ label::before {
+    content: "★";
 }

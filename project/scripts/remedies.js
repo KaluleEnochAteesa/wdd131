@@ -4,7 +4,44 @@ document.addEventListener('DOMContentLoaded', function() {
         lastUpdatedElement.textContent = document.lastModified;
     }
 
-    const remedies = JSON.parse(localStorage.getItem('remedies')) || [];
+    // Check for existing remedies in localStorage
+    let remedies = JSON.parse(localStorage.getItem('remedies'));
+
+    if (!remedies) {
+        // If there are no remedies, initialize with default remedies
+        remedies = [
+            {
+                remedyName: "Herbal Tea for Cold",
+                ingredients: "Ginger, Lemon, Honey, Hot Water",
+                preparation: "Boil water, add sliced ginger, lemon juice, and honey. Stir well and let it sit for 5 minutes.",
+                ailment: "Cold and Cough",
+                developer: "Tea Chef - Shifu Xu",
+                approvalStatus: "Pending",
+                royalties: false
+            },
+            {
+                remedyName: "Aloe Vera Gel for Burns",
+                ingredients: "Fresh Aloe Vera Leaves",
+                preparation: "Extract the gel from fresh aloe vera leaves. Apply the gel to the affected area.",
+                ailment: "Burns and Skin Irritations",
+                developer: "Skin technician - Margeret Sacha",
+                approvalStatus: "Approved",
+                royalties: true
+            },
+            {
+                remedyName: "Turmeric Paste for Inflammation",
+                ingredients: "Turmeric Powder, Water",
+                preparation: "Mix turmeric powder with water to form a paste. Apply the paste to the inflamed area.",
+                ailment: "Inflammation and Pain Relief",
+                developer: "Jerry specialist - Bumpy Johnson",
+                approvalStatus: "Pending",
+                royalties: false
+            }
+        ];
+
+        // Save the default remedies to localStorage
+        localStorage.setItem('remedies', JSON.stringify(remedies));
+    }
 
     const tableBody = document.querySelector('#remedies-table tbody');
 
